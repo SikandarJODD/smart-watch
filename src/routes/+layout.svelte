@@ -24,7 +24,11 @@
   };
 </script>
 
-<div class="navbar bg-base-100 hidden md:flex">
+<!-- You Can Add bg-base-100 or bg-gray-900 border-b-2 border-slate-200 -->
+<div
+  class="navbar  bg-gray-900 border-b-2 border-slate-400 hidden md:flex "
+  id="nav_height"
+>
   <div class="navbar-start ">
     <div class="dropdown">
       <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -130,13 +134,17 @@
     </button>
   </a>
 </div>
-<div class="box p-2 md:px-20">
-  <slot />
-</div>
+<!-- <div class="box p-2 md:px-20"> -->
+<slot />
 
+<!-- </div> -->
 <style lang="postcss">
   .act {
     color: rgb(17, 170, 252);
     background: #46617dc4;
+  }
+  #nav_height {
+    min-height: 60px;
+    height: 60px !important;
   }
 </style>
