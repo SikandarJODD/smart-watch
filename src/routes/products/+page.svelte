@@ -1,4 +1,7 @@
 <script>
+  import PgProducts from "$lib/components/Products/PgProducts.svelte";
 </script>
 
-<h1>Hello products</h1>
+<main>
+  <PgProducts />
+</main>

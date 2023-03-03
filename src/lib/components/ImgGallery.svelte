@@ -1,6 +1,6 @@
 <script>
   let img1 =
-    "https://images.pexels.com/photos/315952/pexels-photo-315952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+    "https://i.pinimg.com/564x/d2/ce/41/d2ce415a0159b22fc40ccc26d2ba623c.jpg";
   // Short img2
   let img2 =
     "https://images.pexels.com/photos/175712/pexels-photo-175712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -24,7 +24,7 @@
           src={img1}
           loading="lazy"
           alt="Photo by Minh Pham"
-          class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+          class="w-full h-full object-cover object-right-bottom absolute inset-0 group-hover:scale-110 transition duration-200"
         />
 
         <div
@@ -89,14 +89,14 @@
       <!-- image - start -->
       <a
         href="/"
-        class="group h-48 md:h-80 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative"
+        class="group h-48 md:h-80 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative "
       >
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img
           src={img4}
           loading="lazy"
           alt="Photo by Lorenzo Herrera"
-          class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
+          class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110   transition duration-200"
         />
 
         <div

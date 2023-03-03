@@ -4,6 +4,9 @@
     "https://i.pinimg.com/564x/d1/44/bc/d144bca97b033bdb904bf7c313cf2c93.jpg";
   let img2 =
     "https://i.pinimg.com/564x/0a/8a/c0/0a8ac0cbaa1e69e295fb9ceb98deed99.jpg";
+  let btn = "View All";
+  let text =
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet provident nulla error!";
 </script>
 
 <section class="bg-gray-900">
@@ -19,16 +22,15 @@
             </h2>
 
             <p class="mt-4 text-slate-400">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-              rerum quam amet provident nulla error!
+              {text}
             </p>
           </header>
 
           <a
-            href="#"
+            href="/products"
             class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-blue-600 border border-blue-600 hover:bg-transparent rounded hover:shadow focus:outline-none focus:ring"
           >
-            Shop All
+            {btn}
           </a>
         </div>
       </div>
@@ -37,7 +39,7 @@
         <ul class="grid grid-cols-2 gap-4">
           <li>
             <a
-              href="#"
+              href="/products"
               class="block group shadow-2xl hover:shadow-cyan-500 transition duration-200"
             >
               <img
@@ -50,7 +52,7 @@
 
           <li>
             <a
-              href="#"
+              href="/products"
               class="block group shadow-2xl hover:shadow-cyan-500 transition duration-200"
             >
               <img

@@ -1,7 +1,9 @@
 <script>
-  import ImgGallery from "../lib/components/ImgGallery.svelte";
-  import PageHero from "../lib/components/PageHero.svelte";
-  import PageProd from "../lib/components/PageProd.svelte";
+  import FeaturesPage from "$lib/components/FeaturesPage.svelte";
+  import ImgGallery from "$lib/components/ImgGallery.svelte";
+  import PageHero from "$lib/components/PageHero.svelte";
+  import PageProd from "$lib/components/PageProd.svelte";
+  import PageStats from "$lib/components/PageStats.svelte";
 </script>
 
 <svelte:head>
@@ -11,10 +13,6 @@
   <PageHero />
   <PageProd />
   <ImgGallery />
+  <FeaturesPage />
+  <PageStats />
 </main>
-
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.gray.100);
-  }
-</style>
