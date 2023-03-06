@@ -1,9 +1,11 @@
 <script>
-  let title = "Vintage Cars";
-  let img1 =
-    "https://i.pinimg.com/564x/d1/44/bc/d144bca97b033bdb904bf7c313cf2c93.jpg";
-  let img2 =
-    "https://i.pinimg.com/564x/0a/8a/c0/0a8ac0cbaa1e69e295fb9ceb98deed99.jpg";
+  import Img1 from "$lib/img1.webp";
+  import Img2 from "$lib/img2.webp";
+  let title = "Smart Watch";
+  // let img1 ="https://i.pinimg.com/564x/d1/44/bc/d144bca97b033bdb904bf7c313cf2c93.jpg";
+  let img1 = Img1;
+  // let img2 ="https://i.pinimg.com/564x/0a/8a/c0/0a8ac0cbaa1e69e295fb9ceb98deed99.jpg";
+  let img2 = Img2;
   let btn = "View All";
   let text =
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum quam amet provident nulla error!";
@@ -17,7 +19,7 @@
       >
         <div class="max-w-md mx-auto text-center lg:text-left">
           <header>
-            <h2 class="text-xl font-bold text-sky-500 sm:text-5xl">
+            <h2 class="text-xl font-bold text-cyan-400 sm:text-5xl">
               {title}
             </h2>
 
@@ -28,7 +30,7 @@
 
           <a
             href="/products"
-            class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-blue-600 border border-blue-600 hover:bg-transparent rounded hover:shadow focus:outline-none focus:ring"
+            class="inline-block px-12 py-3 mt-8 text-sm font-medium text-white transition bg-blue-600 border border-blue-600 hover:bg-transparent focus:outline-none focus:ring"
           >
             {btn}
           </a>
@@ -40,25 +42,21 @@
           <li>
             <a
               href="/products"
-              class="block group shadow-2xl hover:shadow-cyan-500 transition duration-200"
+              class="block group  filter transition duration-200"
             >
               <img
                 src={img1}
                 alt=""
-                class="object-cover w-full rounded aspect-square"
+                class="object-cover w-full rounded aspect-square hover:scale-110 duration-200 transition-all imgShadow "
               />
             </a>
           </li>
-
           <li>
-            <a
-              href="/products"
-              class="block group shadow-2xl hover:shadow-cyan-500 transition duration-200"
-            >
+            <a href="/products" class="block group  transition duration-200">
               <img
                 src={img2}
                 alt=""
-                class="object-cover w-full rounded aspect-square"
+                class="object-cover w-full rounded aspect-square hover:scale-110 duration-200 transition-all imgShadow "
               />
             </a>
           </li>
@@ -67,3 +65,10 @@
     </div>
   </div>
 </section>
+
+<style>
+  .imgShadow:hover {
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 0.9rem rgb(33, 150, 246));
+  }
+</style>

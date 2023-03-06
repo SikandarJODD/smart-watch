@@ -19,7 +19,7 @@
 </script>
 
 <section
-  class="bg-gray-800 border-t-2 border-slate-400 bg-gradient-to-t from-gray-800 to-gray-900 "
+  class=" border-t-2 border-slate-400 bg-gradient-to-t from-gray-800 to-gray-900 "
 >
   <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
@@ -36,7 +36,7 @@
       <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {#each stats as item}
           <div
-            class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center duration-200 transition-all  hover:border-sky-500  hover:bg-gray-900 "
+            class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center duration-200 transition-all  hover:border-sky-500  hover:bg-gray-900 backdrop-blur-lg"
           >
             <dt class="order-last text-lg font-medium text-gray-500">
               {item.title}

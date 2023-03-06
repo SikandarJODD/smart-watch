@@ -1,83 +1,83 @@
 <script>
-  let prdoucttitle = "Product Collections";
+  let prdoucttitle = "Product  Collections";
   let pgtext =
     "This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.";
 
   let pgdata = [
     {
       id: 1,
-      title: "Fancy Outfit",
+      title: "ColorFit Caliber Buzz",
       brand: "Fancy Brand",
-      price: "$19.99",
-      oldprice: "$39.99",
-      img: "https://i.pinimg.com/564x/f7/d1/3a/f7d13acad6cb754438fd5a9da3d78818.jpg",
+      price: "Rs.1,999",
+      oldprice: "Rs.2,500",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/Artboard3_1d215692-f72e-445b-aca5-fd5107f47d2d.png?v=1673941537",
       imgalt: "Photo by Austin Wade",
     },
     {
       id: 2,
-      title: "Cool Outfit",
+      title: "ColorFit Caliber 2 Buzz",
       brand: "Cool Brand",
-      price: "$29.99",
+      price: "Rs.1,999",
       oldprice: "",
-      img: "https://i.pinimg.com/564x/20/83/06/208306ef7f5659a46c2b1c592e7851d2.jpg",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/1_49b76d4f-6c8b-4fce-9061-89e05f1eb7f1.png?v=1669294148",
     },
     {
       id: 3,
-      title: "Funky Outfit",
+      title: "ColorFit Pro 3",
       brand: "Funky Brand",
-      price: "$39.99",
+      price: "Rs.3,500",
       oldprice: "",
-      img: "https://i.pinimg.com/564x/f5/b3/b7/f5b3b7a64c253f882bfdd4337c7721ac.jpg",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/NoiseColoFitPro3Smartwatch-1stImage_1.png?v=1627585572",
     },
     {
       id: 4,
-      title: "Tunky Outfit",
+      title: "Noise ColorFit Pulse",
       brand: "Tunky Brand",
-      price: "$49.99",
+      price: "Rs.2,500",
       oldprice: "",
-      img: "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/NoisePulse1stImageNew_1.png?v=1655378598",
     },
     {
       id: 5,
-      title: "Funky Outfit",
+      title: "ColorFit Pulse 2",
       brand: "Funky Brand",
-      price: "$39.99",
+      price: "Rs.1,500",
       oldprice: "",
-      img: "https://i.pinimg.com/564x/a2/ea/98/a2ea989a1bc308ca8dfe9b2b30e93918.jpg",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/image_2022_07_13T14_17_32_557Z.png?v=1657764046",
     },
     {
       id: 6,
-      title: "Tunky Outfit",
+      title: "ColorFit Vision 2",
       brand: "Tunky Brand",
-      price: "$49.99",
+      price: "Rs.1,300",
       oldprice: "",
-      img: "https://i.pinimg.com/564x/4d/d3/de/4dd3debfeaf25d0e935505eb81eb288f.jpg",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/center.png?v=1656047411",
     },
     {
       id: 7,
-      title: "Funky Outfit",
+      title: "Evolve 2 Play",
       brand: "Funky Brand",
-      price: "$39.99",
+      price: "₹1,499",
       oldprice: "",
-      img: "https://i.pinimg.com/750x/da/1f/c9/da1fc9118f89831b25a0e5303350edc7.jpg",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/Black1_3806338e-c756-4c25-bc61-b955a4a5df11.png?v=1674061195",
     },
     {
       id: 8,
-      title: "Tunky Outfit",
+      title: "ColorFit Icon 2",
       brand: "Tunky Brand",
-      price: "$49.99",
+      price: "₹1,300",
       oldprice: "",
-      img: "https://i.pinimg.com/564x/05/fb/84/05fb8402f6b786dde6c69d09e545c8b0.jpg",
+      img: "https://cdn.shopify.com/s/files/1/0997/6284/products/Artboard11_10f875bf-f9aa-48d9-ac83-b97abe2b5c25.png?v=1672654462",
     },
   ];
 </script>
 
-<div class="bg-gray-900 py-6 sm:py-8 lg:py-12">
+<div class="bg-gray-900 py-6 sm:py-8 lg:py-20">
   <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
     <!-- text - start -->
     <div class="mb-10 md:mb-16">
       <h2
-        class="text-sky-300 text-2xl lg:text-4xl font-bold text-center mb-4 md:mb-6"
+        class="text-sky-400 main_hero text-2xl lg:text-5xl font-bold text-center mb-4 md:mb-6"
       >
         {prdoucttitle}
       </h2>
@@ -103,7 +103,7 @@
               src={product.img}
               loading="lazy"
               alt="Photo by Nick Karvounis"
-              class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200"
+              class="w-full h-full object-fill object-center group-hover:scale-110 transition duration-200"
             />
           </a>
 

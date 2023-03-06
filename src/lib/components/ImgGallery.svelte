@@ -1,14 +1,14 @@
 <script>
-  let img1 =
-    "https://i.pinimg.com/564x/d2/ce/41/d2ce415a0159b22fc40ccc26d2ba623c.jpg";
+  import Img3 from "$lib/img3.jpg";
+  import Img4 from "$lib/img4.png";
+  import Img6 from "$lib/img6.jpg";
+  import Img7 from "$lib/img7.jpg";
+  let img1 = Img3;
   // Short img2
-  let img2 =
-    "https://images.pexels.com/photos/175712/pexels-photo-175712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-  let img3 =
-    "https://images.pexels.com/photos/12467508/pexels-photo-12467508.jpeg";
+  let img2 = Img6;
+  let img3 = Img7;
   // Short img4
-  let img4 =
-    "https://i.pinimg.com/564x/d2/76/08/d27608fa2f28fed73ae988d628911e18.jpg";
+  let img4 = Img4;
 </script>
 
 <div class="bg-gray-900 py-6 sm:py-8 lg:py-12 md:px-24">
@@ -17,37 +17,13 @@
       <!-- image - start -->
       <a
         href="/"
-        class="group h-48 md:h-80 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative"
+        class="group h-48 md:h-80 flex items-end  overflow-hidden rounded-lg shadow-lg relative"
       >
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img
           src={img1}
           loading="lazy"
           alt="Photo by Minh Pham"
-          class="w-full h-full object-cover object-right-bottom absolute inset-0 group-hover:scale-110 transition duration-200"
-        />
-
-        <div
-          class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"
-        />
-
-        <span
-          class="inline-block text-white text-sm md:text-lg relative ml-4 md:ml-5 mb-3"
-          >VR</span
-        >
-      </a>
-      <!-- image - end -->
-
-      <!-- image - start -->
-      <a
-        href="/"
-        class="group h-48 md:h-80 md:col-span-2 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative"
-      >
-        <!-- svelte-ignore a11y-img-redundant-alt -->
-        <img
-          src={img2}
-          loading="lazy"
-          alt="Photo by Magicle"
           class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200"
         />
 
@@ -55,17 +31,41 @@
           class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"
         />
 
-        <span
+        <!-- <span
           class="inline-block text-white text-sm md:text-lg relative ml-4 md:ml-5 mb-3"
-          >Tech</span
-        >
+          >VR</span
+        > -->
       </a>
       <!-- image - end -->
 
       <!-- image - start -->
       <a
         href="/"
-        class="group h-48 md:h-80 md:col-span-2 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative"
+        class="group h-48 md:h-80 md:col-span-2 flex items-end  overflow-hidden rounded-lg shadow-lg relative"
+      >
+        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <img
+          src={img2}
+          loading="lazy"
+          alt="Photo by Magicle"
+          class="w-full h-full object-full  absolute inset-0 group-hover:scale-110 transition duration-200"
+        />
+
+        <div
+          class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"
+        />
+
+        <!-- <span
+          class="inline-block text-white text-sm md:text-lg relative ml-4 md:ml-5 mb-3"
+          >Tech</span
+        > -->
+      </a>
+      <!-- image - end -->
+
+      <!-- image - start -->
+      <a
+        href="/"
+        class="group h-48 md:h-80 md:col-span-2 flex items-end  overflow-hidden rounded-lg shadow-lg relative"
       >
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img
@@ -79,17 +79,17 @@
           class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"
         />
 
-        <span
+        <!-- <span
           class="inline-block text-white text-sm md:text-lg relative ml-4 md:ml-5 mb-3"
           >Dev</span
-        >
+        > -->
       </a>
       <!-- image - end -->
 
       <!-- image - start -->
       <a
         href="/"
-        class="group h-48 md:h-80 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative "
+        class="group h-48 md:h-80 flex items-end  overflow-hidden rounded-lg shadow-lg relative "
       >
         <!-- svelte-ignore a11y-img-redundant-alt -->
         <img
@@ -103,10 +103,10 @@
           class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none"
         />
 
-        <span
+        <!-- <span
           class="inline-block text-white text-sm md:text-lg relative ml-4 md:ml-5 mb-3"
           >Retro</span
-        >
+        > -->
       </a>
       <!-- image - end -->
     </div>

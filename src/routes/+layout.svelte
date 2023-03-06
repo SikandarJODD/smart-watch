@@ -1,12 +1,14 @@
 <script>
   import { page } from "$app/stores";
+  import MainLogo from "$lib/wristwatch.png";
   $: RouteId = $page.route.id;
+
   $: console.log(RouteId);
   import "../app.css";
   import Logo from "$lib/logo.png";
   let data = {
-    imgSrc: Logo,
-    title: "Funky Tunky",
+    imgSrc: MainLogo,
+    title: "Matrix",
     navs: [
       {
         nv: "Home",
@@ -26,7 +28,7 @@
 
 <!-- You Can Add bg-base-100 or bg-gray-900 border-b-2 border-slate-200 -->
 <div
-  class="navbar  bg-gray-900 border-b-2 border-slate-400 hidden md:flex "
+  class="navbar border-b-2 border-slate-400 hidden md:flex fixed top-0 backdrop-blur-sm bg-opacity-25 z-10"
   id="nav_height"
 >
   <div class="navbar-start ">
@@ -61,7 +63,9 @@
     </div>
     <a class="btn btn-ghost normal-case text-xl" href="/">
       <img src={data.imgSrc} width="45" alt="" />
-      <span class="px-2 text-2xl text-sky-500 font-bold">{data.title}</span></a
+      <span class="px-2 text-2xl text-sky-400  font-bold main_hero"
+        >{data.title}</span
+      ></a
     >
   </div>
   <div class="navbar-center hidden lg:flex">
@@ -69,8 +73,10 @@
       <!-- Laptop -->
       {#each data.navs as nav}
         <li>
-          <a href={nav.link} class="mx-1" class:act={RouteId == nav.link}
-            >{nav.nv}</a
+          <a
+            href={nav.link}
+            class="mx-1 text-white"
+            class:act={RouteId == nav.link}>{nav.nv}</a
           >
         </li>
       {/each}
@@ -136,12 +142,86 @@
 </div>
 <!-- <div class="box p-2 md:px-20"> -->
 <slot />
+<footer class="text-gray-600 body-font bg-gray-900">
+  <div
+    class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+  >
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <a
+      class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+    >
+      <img src={data.imgSrc} width="45" alt="" />
+      <span class="ml-3 text-2xl text-sky-400 main_hero">Matrix</span>
+    </a>
+    <p
+      class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+    >
+      © 2023 Matrix —
+      <a
+        href="https://www.linkedin.com/in/sikandar-bhide-911988211/"
+        class="text-slate-400 ml-1"
+        rel="noopener noreferrer"
+        target="_blank">@bhide</a
+      >
+    </p>
+    <span
+      class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+    >
+      <a
+        class="ml-3 text-gray-500 hover:text-info transition-all duration-200 ease-in-out"
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.instagram.com/sikandar.s.bhide/"
+      >
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+        >
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+        </svg>
+      </a>
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <a
+        class="ml-3 text-gray-500 hover:text-info transition-all duration-200 ease-in-out"
+        href="https://www.linkedin.com/in/sikandar-bhide-911988211/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <svg
+          fill="currentColor"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="0"
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="none"
+            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+          />
+          <circle cx="4" cy="4" r="2" stroke="none" />
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
 
 <!-- </div> -->
 <style lang="postcss">
+  @import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+  :global(.main_hero) {
+    font-family: "Rubik Iso", cursive;
+  }
   .act {
-    color: rgb(17, 170, 252);
-    background: #46617dc4;
+    color: rgb(11, 165, 248);
+    background: rgba(11, 165, 248, 0.113);
   }
   #nav_height {
     min-height: 60px;
