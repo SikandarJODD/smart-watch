@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-  <title>Funky Tunky | Home Page</title>
+  <title>Matrix | Home Page</title>
   <link rel="shortcut icon" href={Logo} type="image/x-icon" />
   <meta name="description" content="Building Character Takes Time - Matrix" />
   <meta
