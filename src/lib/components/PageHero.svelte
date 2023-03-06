@@ -9,18 +9,20 @@
 
 <section class="bg-gray-900 text-white">
   <div
-    class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+    class="mx-auto max-w-screen-xl px-4 py-5 lg:flex lg:h-screen lg:items-center"
   >
     <div class="mx-auto max-w-6xl text-center  ">
       <h1
-        class="bg-gradient-to-r from-green-300 via-blue-400 to-purple-700 bg-clip-text text-3xl font-extrabold text-transparent sm:text-6xl pb-3"
+        class="bg-gradient-to-r from-green-300 via-blue-400 to-purple-700 bg-clip-text text-4xl font-extrabold text-transparent sm:text-6xl md:pb-3"
       >
         {mainTitle}
 
-        <span class="sm:block "> {subTitle} </span>
+        <span class="md:block hidden "> {subTitle} </span>
       </h1>
 
-      <p class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
+      <p
+        class="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed hidden md:block"
+      >
         {@html PageText}
       </p>
 
