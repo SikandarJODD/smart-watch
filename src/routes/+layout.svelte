@@ -2,10 +2,7 @@
   import { page } from "$app/stores";
   import MainLogo from "$lib/wristwatch.png";
   $: RouteId = $page.route.id;
-
-  $: console.log(RouteId);
   import "../app.css";
-  import Logo from "$lib/logo.png";
   let data = {
     imgSrc: MainLogo,
     title: "Matrix",
@@ -84,8 +81,8 @@
   </div>
 </div>
 <!-- Bottom Navigation for Phone -->
-<div class="btm-nav md:hidden">
-  <a href="/" class={RouteId === "/" ? "text-info active" : " "}>
+<div class="btm-nav md:hidden bg-transparent z-10 backdrop-blur-sm">
+  <a href="/" class={RouteId === "/" ? "text-info border-t-2" : " text-white"}>
     <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +101,7 @@
   </a>
   <a
     href="/products"
-    class={RouteId === "/products" ? "text-info active" : " "}
+    class={RouteId === "/products" ? "text-info border-t-2" : " text-white"}
   >
     <button>
       <svg
@@ -122,7 +119,10 @@
       >
     </button>
   </a>
-  <a href="/about" class={RouteId === "/about" ? "text-info active" : " "}>
+  <a
+    href="/about"
+    class={RouteId === "/about" ? "text-info border-t-2" : "text-white "}
+  >
     <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,11 @@
   </a>
 </div>
 <!-- <div class="box p-2 md:px-20"> -->
+
+<!-- Slot Session  -->
 <slot />
+
+<!-- Footer  -->
 <footer class="text-gray-600 body-font bg-gray-900">
   <div
     class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
